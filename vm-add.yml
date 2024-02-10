@@ -1,0 +1,17 @@
+---
+- name: AR-OPS-AUTO
+  hosts: localhost
+  tasks:
+  - name: VM-1-TEST
+    os_server:
+       state: present
+       name: vm2
+       image: "Ubuntu-20.04"
+       key_name: k8s
+       timeout: 200
+       flavor: 96eede79-68d8-4086-921e-57133de73c2b
+       auto_ip: no
+       network: 7ef4c191-a7dd-4b75-8f9d-31df32b86291
+       security_groups: default
+       meta:
+         os: ubuntu
