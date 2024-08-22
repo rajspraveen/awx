@@ -1,5 +1,5 @@
 ---
-- name: AR-OPS-AUTO
+- name: VM Creation
   hosts: localhost
   tasks:
   - name: VM-1-TEST
